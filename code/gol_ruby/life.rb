@@ -16,7 +16,8 @@ def live ( population, rows, cols, gens )
   count = 0
   population.each do |person|
     printf( person ? "o" : " " )
-    if ++count % cols == 0
+    count += 1
+    if count % cols == 0
       printf("\n")
     end
   end
