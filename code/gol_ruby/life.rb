@@ -1,3 +1,17 @@
+# Adds int conversion to false
+class FalseClass
+  def to_i
+    0
+  end
+end
+
+# Adds int conversion for true
+class TrueClass
+  def to_i
+    1
+  end
+end
+
 def start
   sleep( 1 )
   clear_screen
