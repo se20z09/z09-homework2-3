@@ -1,3 +1,5 @@
+require 'io/console'
+
 # Size of population grid
 ROWS = 50
 COLS = 20
@@ -84,7 +86,7 @@ def live ( population, rows, cols, gens )
     end
   end
   # Wait for input, then recursive call
-  gets
+  STDIN.getch
   live(next_gen, rows, cols, gens - 1)
 end
 
