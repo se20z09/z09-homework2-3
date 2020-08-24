@@ -1,3 +1,13 @@
+# Size of population grid
+ROWS = 50
+COLS = 20
+
+# Number of generations to run through
+NUM_GENS = 200
+
+# True/False threshold for population init
+SOME = 0.619
+
 # Adds int conversion to false
 class FalseClass
   def to_i
@@ -16,7 +26,7 @@ end
 def start
   sleep( 1 )
   clear_screen
-  life(50, 20, 0.619, 200 )
+  life( ROWS, COLS, SOME, NUM_GENS )
 end
 
 # Creates array of people and calls recursive func to advance gens
@@ -42,7 +52,7 @@ def live ( population, rows, cols, gens )
   sleep( 0.1 )
   clear_screen
   # Print status of current gen
-  printf( "Generation %3d\n", gens )
+  printf( "Generation %3d\n", NUM_GENS - gens )
   count = 0
   population.each do |person|
     printf( person ? "o" : " " )
