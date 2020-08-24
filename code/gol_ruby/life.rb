@@ -67,17 +67,9 @@ def live ( population, rows, cols, gens )
   next_gen = Array.new(population.length)
   0.upto(population.length - 1) do |i|
     # Check number of living neighbors
-    # neighbors = [population[i - 1], population[i + 1], population[i - cols - 1],
-    #              population[i - cols], population[i - cols + 1],
-    #              population[i + cols - 1], population[i + cols], population[ i + cols + 1]]
     live_neighbors = population[i-1].to_i + population[i+1].to_i + population[i - cols - 1].to_i +
         population[i - cols].to_i + population[i - cols + 1].to_i +
         population[i + cols - 1].to_i + population[i + cols].to_i + population[i + cols + 1].to_i
-    # neighbors.each do |neighbor|
-    #   if neighbor
-    #     live_neighbors += 1
-    #   end
-    # end
     # Update status based on number of live_neighbors
     if population[i] == 0
       next_gen[i] = live_neighbors == 3
