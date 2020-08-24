@@ -21,9 +21,13 @@ end
 
 # Creates array of people and calls recursive func to advance gens
 def life ( rows, cols, some, gens )
-  population = new Array( rows * cols )
-  population.each do |person|
-    person = rand( max= 1 ) < some
+  # Array to hold people
+  population = Array.new( rows * cols )
+  # Random float generator
+  floatgen = Random.new
+  # Init population with random bools
+  0.upto( population.length - 1 ) do |i|
+    population[i] = floatgen.rand( max = 1.0 ) < some
   end
   live( population, rows, cols, gens )
 end
