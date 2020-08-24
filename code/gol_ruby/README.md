@@ -1,4 +1,4 @@
-### Conway's Game of Life in Rust
+### Conway's Game of Life in Ruby
 ## Setup
 To run the simulation, ensure you have an updated install of Ruby on your machine. Open your desired terminal and run the program by entering `ruby life_buggy.rb`.
 
