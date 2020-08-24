@@ -7,7 +7,7 @@ import (
 )
 
 //live function generates random array of 1's and 0's
-func live(rows int, cols int, gens int) {
+func life(rows int, cols int, gens int) {
 	var calc int
 	calc = rows * cols
 	rand.Seed(time.Now().UnixNano())
@@ -24,10 +24,10 @@ func live(rows int, cols int, gens int) {
 			t[i] = false
 		}
 	}
-	life(now, t, rows, gens)
+	live(now, t, rows, gens)
 }
 
-func life(now [1050]int, t [1000]bool, rows int, gens int) {
+func live(now [1050]int, t [1000]bool, rows int, gens int) {
 	for gens >= 1 {
 		time.Sleep(10 * time.Millisecond)
 		homeScreen()
@@ -98,7 +98,7 @@ func life(now [1050]int, t [1000]bool, rows int, gens int) {
 			if gens <= 1 {
 				break
 			}
-			life(newarr, newbool, rows, gens)
+			live(newarr, newbool, rows, gens)
 		}
 	}
 }
@@ -112,5 +112,5 @@ func clearScreen() {
 func main() {
 	time.Sleep(10 * time.Millisecond)
 	clearScreen()
-	live(50, 20, 8)
+	life(50, 20, 8)
 }
