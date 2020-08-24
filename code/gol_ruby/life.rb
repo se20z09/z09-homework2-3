@@ -4,6 +4,8 @@ def start
   life(50, 20, 0.619, 200 )
 end
 
+
+
 def life ( rows, cols, some, gens )
   population = new Array( rows * cols )
   population.each do |person|
