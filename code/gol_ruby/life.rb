@@ -12,12 +12,14 @@ class TrueClass
   end
 end
 
+# Clears terminal and starts creation of population array
 def start
   sleep( 1 )
   clear_screen
   life(50, 20, 0.619, 200 )
 end
 
+# Creates array of people and calls recursive func to advance gens
 def life ( rows, cols, some, gens )
   population = new Array( rows * cols )
   population.each do |person|
@@ -26,6 +28,7 @@ def life ( rows, cols, some, gens )
   live( population, rows, cols, gens )
 end
 
+# Recursive function to advance generations of population
 def live ( population, rows, cols, gens )
   # Base case
   if gens < 1
@@ -68,6 +71,7 @@ def live ( population, rows, cols, gens )
   live(next_gen, rows, cols, gens - 1)
 end
 
+# Clears terminal window
 def clear_screen
   system( "clear" ) || system( "cls" )
 end
