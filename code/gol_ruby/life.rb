@@ -62,7 +62,7 @@ def live ( population, rows, cols, gens )
     end
   end
   # Update population for next gen
-  next_gen = new Array(population.length)
+  next_gen = Array.new(population.length)
   0.upto(population.length - 1) do |i|
     # Check number of living neighbors
     # neighbors = [population[i - 1], population[i + 1], population[i - cols - 1],
