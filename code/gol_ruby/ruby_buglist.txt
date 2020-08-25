@@ -1,0 +1,17 @@
+Removed TrueClass.to_i
+
+start func:
+	- Line 22: sleep(30) should be sleep(1)
+
+life func:
+	- Line 30: new Array should be Array.new
+	- Line 34: population.length should be population.length - 1
+	- Line 35: max = 1 should be max = 1.0
+	- Line 37: function called should be live
+
+live func:
+	- Line 55: = should be ==
+	- Line 58: missing end of foreach loop
+	- Line 64: population[i-cols] should have .to_i appended
+
+Removed call to start function, nothing to start program
