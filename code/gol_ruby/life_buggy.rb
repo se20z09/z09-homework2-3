@@ -17,16 +17,9 @@ class FalseClass
   end
 end
 
-# Adds int conversion for true
-class TrueClass
-  def to_i
-    1
-  end
-end
-
 # Clears terminal and starts creation of population array
 def start
-  sleep( 1 )
+  sleep( 30 )
   clear_screen
   life( ROWS, COLS, SOME, NUM_GENS )
 end
@@ -34,14 +27,14 @@ end
 # Creates array of people and calls recursive func to advance gens
 def life ( rows, cols, some, gens )
   # Array to hold people
-  population = Array.new( rows * cols )
+  population = new Array( rows * cols )
   # Random float generator
   floatgen = Random.new
   # Init population with random bools
-  0.upto( population.length - 1 ) do |i|
-    population[i] = floatgen.rand( max = 1.0 ) < some
+  0.upto( population.length ) do |i|
+    population[i] = floatgen.rand( max = 1 ) < some
   end
-  live( population, rows, cols, gens )
+  life( population, rows, cols, gens )
 end
 
 # Recursive function to advance generations of population
@@ -54,21 +47,20 @@ def live ( population, rows, cols, gens )
   sleep( 0.1 )
   clear_screen
   # Print status of current gen
-  printf( "Generation %3d\n", NUM_GENS - gens )
+  printf( "Generation %3d\n", NUM_GENS - gens + 1 )
   count = 0
   population.each do |person|
     printf( person ? "o" : " " )
     count += 1
-    if count % cols == 0
+    if count % cols = 0
       printf("\n")
     end
-  end
   # Update population for next gen
   next_gen = Array.new(population.length)
   0.upto(population.length - 1) do |i|
     # Check number of living neighbors
     live_neighbors = population[i-1].to_i + population[i+1].to_i + population[i - cols - 1].to_i +
-        population[i - cols].to_i + population[i - cols + 1].to_i +
+        population[i - cols] + population[i - cols + 1].to_i +
         population[i + cols - 1].to_i + population[i + cols].to_i + population[i + cols + 1].to_i
     # Update status based on number of live_neighbors
     if population[i] == 0
@@ -86,6 +78,3 @@ end
 def clear_screen
   system( "clear" ) || system( "cls" )
 end
-
-# Start simulation
-start

@@ -54,7 +54,7 @@ def live ( population, rows, cols, gens )
   sleep( 0.1 )
   clear_screen
   # Print status of current gen
-  printf( "Generation %3d\n", NUM_GENS - gens )
+  printf( "Generation %3d\n", NUM_GENS - gens + 1)
   count = 0
   population.each do |person|
     printf( person ? "o" : " " )
