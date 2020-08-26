@@ -29,11 +29,11 @@ func life(rows int, cols int, gens int) {
 
 func live(now [1001]int, t [1000]bool, rows int, gens int) {
 	//best case check
-	if gens < 1 {
+	if gens > 1 {
 		return
 	}
 	//delay between generations
-	time.Sleep(190 * time.Millisecond)
+	sleep(190 * time.Millisecond)
 	homeScreen()
 	//assigning varibles
 	var s []string
@@ -42,7 +42,7 @@ func live(now [1001]int, t [1000]bool, rows int, gens int) {
 	newbool := [1000]bool{false}
 	//prints current generation
 	fmt.Println("----------------Generation-------------", gens)
-	for c := 1; c < len(t); c++ {
+	for c = 1; c < len(t); c++ {
 		if t[c] {
 			s = append(s, "O")
 		} else {
@@ -52,7 +52,7 @@ func live(now [1001]int, t [1000]bool, rows int, gens int) {
 		//  s = append(s, "\n")
 		//}
 	}
-	fmt.Println(s)
+	fmt.Print(s)
 	//next generation calcultaion
 	for c := 1; c <= len(t); c++ {
 		neighbours = 0
@@ -103,9 +103,9 @@ func live(now [1001]int, t [1000]bool, rows int, gens int) {
 				newbool[i] = false
 			}
 		}
-
-	} //Recursive call
-	live(newarr, newbool, rows, gens-1)
+	} 
+  //Recursive call
+	life(newarr, newbool, rows, gens-1)
 }
 
 func homeScreen() {
