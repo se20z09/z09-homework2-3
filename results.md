@@ -48,6 +48,7 @@ Additionally, as a part of pre-test analysis we wanted to identify the candidate
 As a part of post test analysis we were primarily focused on:
 * Identifying the difficulty faced by participants during the debugging phase.
 * Identifying if the presented programming languages resembled any popular programming languages they were familiar with.
+* Identifying which language they prefer to work/learn in future.
 * Lastly, feedback to be better prepared for the future activities.
 
 The responses from the survey are presented in Figure 2.
