@@ -62,7 +62,7 @@ Majority of the participants seemed to have a great overall test experience. Mos
 * Recommendation to reduce the number of bugs presented during the session.
 * Recommended that the code snippets could have all followed the awk script example.
 * Concerns with the debugging environment as candidate was not familiar with repl.it
-![Survey Responses](data/survey_results.png) <div align="center">Figure 2: Particpants responses from pre-test and post-test survey.</div>
+![Survey Responses](data/survey_results.png) <div align="center">Figure 2: Participants responses from pre-test and post-test survey.</div>
 
 ## Conclusions
 
