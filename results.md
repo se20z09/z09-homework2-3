@@ -6,9 +6,9 @@
 
 ## Observations
 ### Experimental Results
-This section analysis the results of the Game of Life experiment. 
+This section analyzes the results obtained from the Game of Life experiment. 
 
-The candidates were tested on numerous  metrics during the debugging sessions. Figure 1 displays the various metrics that candidates were assessed upon.
+The candidates were tested on numerous metrics during the debugging sessions. Figure 1 displays the various metrics that candidates were assessed upon.
 <br />
 #### A brief description of the metric is shown below:
 * \# Bugs Fixed - Average number of bugs fixed, partial fixes are not counted.
