@@ -18,8 +18,6 @@
 
 
 ## Observations
-* Based on a majority of our aggregated metrics, it could be argued that Go is the language that our testers had the most success debugging. Go was the only language of the three that any of the testers were able to get running with correct functionality, as well as being within the margin of error for the language with the most bugs fixed, lowest time per bug, time to first bug, and second lowest time to get running.
-* With 80% of Go testers reporting that the language resembled either C or Java, contrasted with comparisons made to Python and Swift for Rust and Go respectively, it is possible that resembling a more popular language helped testers to feel more familiar with the Go code. This would be an interesting hypothesis to explore further in a follow-up study.
 
 ### Experimental Results
 This section analyzes the results obtained from the Game of Life experiment. 
@@ -82,7 +80,8 @@ Majority of the participants seemed to have a great overall test experience. Mos
 ![Survey Responses](data/survey_results.png) <div align="center">Figure 2: Participants responses from pre-test and post-test survey.</div>
 
 ## Conclusions
-
+* Based on a majority of our aggregated metrics, it could be argued that Go is the language that our testers had the most success debugging. Go was the only language of the three that any of the testers were able to get running with correct functionality, as well as being within the margin of error for the language with the most bugs fixed, lowest time per bug, time to first bug, and second lowest time to get running.
+* With 80% of Go testers reporting that the language resembled either C or Java, contrasted with comparisons made to Python and Swift for Rust and Go respectively, it is possible that resembling a more popular language helped testers to feel more familiar with the Go code. This would be an interesting hypothesis to explore further in a follow-up study.
 ## Threats to Validity
 * The small sample size mostly prevents us from making any real statistically significant conclusions. A greater sample size will be needed for the Week 14 experiment.
 * Our Ruby code had double the number of bugs relative to our other languages, skewing all time metrics and success rates for that test. In the future we will need to ensure that our variables are more tightly controlled to allow for proper conclusions.
