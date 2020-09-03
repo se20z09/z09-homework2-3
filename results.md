@@ -48,6 +48,7 @@ The candidates were tested on numerous metrics during the debugging sessions. Fi
 * A few of them spent majority of their time trying to figure out debugger on repl.it versus reading the code.
 * Few of them did not pay attention to flow of logic and did not realize the start function was never called.
 * The error message provided by the Ruby parser is misleading and difficult to debug -- the line number of the error is misleading and only provides general guidance, which didn’t indicate that the error _could have been_ elsewhere.  
+
 ![Experimental Results](data/tester_results.png)<div align="center">Figure 1: Participants were tested on numerous metrics to evaluate their debugging skills.</div>
 <br />
 
@@ -79,6 +80,7 @@ Majority of the participants seemed to have a great overall test experience. Mos
 * Recommendation to reduce the number of bugs presented during the session.
 * Recommended that the code snippets could have all followed the awk script example.
 * Concerns with the debugging environment as candidate was not familiar with repl.it
+
 ![Survey Responses](data/survey_results.png) <div align="center">Figure 2: Participants responses from pre-test and post-test survey.</div>
 
 ## Conclusions
