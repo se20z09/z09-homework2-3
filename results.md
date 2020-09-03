@@ -10,6 +10,12 @@
 * While on the zoom debugging session with the candidate we made sure that the screen sharing for the candidate is enabled and recorded the session as well. This was done to ensure that the candidate is heading the right way and is not stuck doing irrelevant things.
 
 ## Materials
+* Google sheet for signing up for debugging trials 
+* Google form for candidates (filled before and after the debugging trials) (link)
+* Evaluation sheet for each candidate
+* We used repl.it for our debugging trials.
+* Repl.it is a free IDE (integrated development environment) that allows users to write their own programs and code in dozens of different languages. While traditional IDEs are software programs downloaded to a computer, Repl.it is completely web browser-based and can be accessed from any internet-enabled device such as a phone, tablet, or computer. Users can access the software by typing the name directly into their browser, www.repl.it. 
+
 
 ## Observations
 ### Experimental Results
