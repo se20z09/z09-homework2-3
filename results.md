@@ -8,6 +8,7 @@
 * We created a Google Sheet where candidates interested could sign up for debugging trails with their preferred time slots.
 * [Project Procedure](docs/test_protocol.pdf)
 * While on the zoom debugging session with the candidate we made sure that the screen sharing for the candidate is enabled and recorded the session as well. This was done to ensure that the candidate is heading the right way and is not stuck doing irrelevant things.
+* Participants were provided with three links, each for the go, rust, and ruby codes. These links were of repl.it, where the participants were supposed to debug the code.
 
 ## Materials
 * Google sheet for signing up for debugging trials 
