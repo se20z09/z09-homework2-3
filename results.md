@@ -1,6 +1,13 @@
 # Debug Efficiency Experiment Results
 
 ## Methods
+* We implemented Game of Life in Go, Ruby, and Rust. 
+* There were 5 bugs in Go, 5 bugs in Rust and 10 bugs in Ruby.
+* Complexity level of bugs were from easy to medium only.
+* Candidates were explained about the procedure at the beginning of the test.
+* We created a Google Sheet where candidates interested could sign up for debugging trails with their preferred time slots.
+* [Project Procedure](docs/test_protocol.pdf)
+* While on the zoom debugging session with the candidate we made sure that the screen sharing for the candidate is enabled and recorded the session as well. This was done to ensure that the candidate is heading the right way and is not stuck doing irrelevant things.
 
 ## Materials
 
