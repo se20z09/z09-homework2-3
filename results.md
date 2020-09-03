@@ -81,3 +81,7 @@ Majority of the participants seemed to have a great overall test experience. Mos
 ## Conclusions
 
 ## Threats to Validity
+* The small sample size mostly prevents us from making any real statistically significant conclusions. A greater sample size will be needed for the Week 14 experiment.
+* Our Ruby code had double the number of bugs relative to our other languages, skewing all time metrics and success rates for that test. In the future we will need to ensure that our variables are more tightly controlled to allow for proper conclusions.
+* In choosing to allow testers to work on any of the three languages, we ended up with many fewer data points for Rust than for Ruby and Go. For Week 14 we will need to carefully consider how much control we allow the testers to have over the experiment procedure.
+* We should’ve tried doing the debugging experiments ourselves(for the codes which we did not write), so that we had some kind of benchmark to compare our results with.
